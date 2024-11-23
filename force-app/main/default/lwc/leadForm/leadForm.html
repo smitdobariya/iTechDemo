@@ -1,0 +1,21 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-around_medium container">
+            <lightning-input label="First Name" value={firstName} onchange={handleInputChange} data-id="firstName">
+            </lightning-input>
+
+            <lightning-input label="Last Name" value={lastName} onchange={handleInputChange} data-id="lastName">
+            </lightning-input>
+
+            <lightning-input label="Email" type="email" value={email} onchange={handleInputChange} data-id="email">
+            </lightning-input>
+
+            <lightning-input label="Phone" type="tel" value={phone} onchange={handleInputChange} data-id="phone">
+            </lightning-input>
+
+            <lightning-button label="Submit" variant="brand" onclick={handleSubmit} class="slds-m-top_medium">
+            </lightning-button>
+
+        </div>
+    </lightning-card>
+</template>

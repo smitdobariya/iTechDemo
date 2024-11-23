@@ -1,0 +1,10 @@
+<template>
+    <template if:false={formSubmitted}>
+        <div lwc:dom="manual" class="dynamic-component-container"></div>
+        <c-lead-form onsubmitform={handleFormSubmit}></c-lead-form>
+    </template>
+    <template if:true={formSubmitted}>
+        <!-- <p>Form Submitted Successfully!</p> -->
+    </template>
+
+</template>
